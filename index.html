@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="main.png" type="image/x-icon">
+    <title>Profile | Shadow</title>
+</head>
+<body>
+    <header>
+    <a href="index.html"><p class="logo">Profile</p></a>
+        <nav>
+            
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.png" alt="">
+        </div>     
+        <nav>
+            <ul>
+
+</ul>
+</nav>
+
+
+<script>
+    function goToExperiences() {
+       
+        document.body.style.transition = 'opacity 1s ease';
+        document.body.style.opacity = '0'; 
+    
+        setTimeout(() => {
+            window.location.href = 'esperienze.html';
+        }, 1000); 
+    }
+</script>
+
+
+        <div class="home-content">
+            <h1>Hi, my name is <span>Shadow</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I am a junior programmer and developer currently on a journey to grow and improve my skills in the tech industry. I am passionate about programming languages and always excited to learn new technologies such as Java, Python, JavaScript, HTML, CSS, and PHP. My long-term goal is to become an expert developer capable of contributing to exciting and dynamic software projects while collaborating with experienced professionals in the field of programming and technology. I am eager to expand my knowledge of frameworks like Node.js. Aiming to become a versatile and well-rounded programmer, I still have a lot to learn, especially in languages like Java, but I am capable of producing high-quality work, even if it's just small tasks.</p>
+</body>
+
+<style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+       
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: black;
+            padding: 1rem 9%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 100;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-right: 2rem;
+        }
+
+        a {
+            color: white;
+            font-weight: 600;
+            font-size: 1.6rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #01caca;
+        }
+
+        
+        .btn-container {
+            position: fixed;
+            top: 20px;   
+            right: 20px; 
+            display: flex;
+            flex-direction: column; 
+            gap: 20px; 
+            z-index: 200;
+        }
+
+        .btn {
+            padding: 1rem 2.8rem;
+            background-color: black;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: #01caca;
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            border: 2px solid #01caca;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+            transform: scale3d(1.03);
+            background-color: #01caca;
+            color: black;
+            box-shadow: 0 0 25px #01caca;
+        }
+
+
+        .home {
+            min-height: 100vh;
+            padding: 5rem 9% 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+            background-color: black;
+        }
+
+        .home .home-content h1 {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .home .home-content p {
+            font-size: 1.6rem;
+        }
+    </style>
+
+
+
+    <div class="social-icons">
+        <a href="https://discordapp.com/users/1066022292943024219">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Infobox_info_icon.svg/1024px-Infobox_info_icon.svg.png" 
+                 alt="Info Icon" 
+                 style="width: 40px; height: 40px;">
+        </a>
+    </div>
+</div>
+
+<div class="points_wrapper">
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+    <i class="point"></i>
+  </div>
+  
+  <span class="inner">
+    <svg
+      class="icon"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.5"
+    >
+      <polyline
+       
+      />
+    </svg>
+  </span>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAkvKOGsQBwdjf1yQ0vqeeOgTnOL2OfHks",
+      authDomain: "shadow-codev.firebaseapp.com",
+      projectId: "shadow-codev",
+      storageBucket: "shadow-codev.firebasestorage.app",
+      messagingSenderId: "115840615797",
+      appId: "1:115840615797:web:84cbe74182103ad87dbf3c",
+      measurementId: "G-JTLLW4QGS9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
+
+
+
+
